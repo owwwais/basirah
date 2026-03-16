@@ -3,6 +3,14 @@
    ========================================================================== */
 
 /* Variables & Theme Colors */
+@font-face {
+    font-family: 'Alyamama';
+    src: url('fonts/Alyamama.ttf') format('truetype');
+    font-weight: 100 900; /* Supports variable weights */
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     /* Brand Colors extracted from app_theme.dart */
     --alabaster: #F7F7F5;
