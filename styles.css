@@ -613,6 +613,53 @@ img, svg {
     font-size: 0.875rem;
 }
 
+/* Developer Signature */
+.developer-signature {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    direction: ltr; /* English text and logo flow */
+}
+
+.dev-logo {
+    height: 24px;
+    width: auto;
+    filter: brightness(0) invert(1); /* Forces the SVG to be pure white */
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+    margin-bottom: 0.25rem;
+}
+
+.dev-logo:hover {
+    opacity: 1;
+}
+
+.dev-links {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.dev-link, .dev-contact {
+    color: #A0A0A0; /* Slightly dimmer than pure white for the signature links */
+    transition: color 0.2s ease;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.dev-link:hover, .dev-contact:hover {
+    color: var(--pure-white);
+}
+
+.dev-sep {
+    color: #444;
+    font-size: 0.8rem;
+}
+
 /* Animations */
 /* Scroll Reveal Utilities */
 .reveal-up {
