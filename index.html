@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بصيرة — دفترك الخاص، ورفيقٌ ذكيّ يفهمك</title>
+    <meta name="description" content="بصيرة تطبيق يوميات عربي يعمل على جهازك بالكامل: محرر غني، تدوين صوتي، مجلدات سرّية، تحليلات للمزاج، وكبسولات «نبض» ملهمة من رفيقك الذكي «سهيل» — بتشفير كامل وخصوصية مطلقة.">
+    <meta name="theme-color" content="#2C4C3B">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="بصيرة — دفترك الخاص، ورفيقٌ ذكيّ يفهمك">
+    <meta property="og:description" content="يوميات عربية محلّية بالكامل، مشفّرة، مع ذكاء اصطناعي يفهم كتاباتك ويهديك نصائح ورؤى — بخصوصية مطلقة.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_AR">
+
+    <!-- Fonts: Alyamama (local) / Inter / Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- ====================== NAVBAR ====================== -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text kashida-hover" data-prefix="بصي" data-suffix="رة" data-count="15">بصيرة</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">المميزات</a>
+                <a href="#sohail" class="nav-link">سهيل</a>
+                <a href="#insights" class="nav-link">التحليلات</a>
+                <a href="#privacy" class="nav-link">الخصوصية</a>
+                <a href="#download" class="nav-btn primary-btn btn-small">حمّل التطبيق</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====================== HERO ====================== -->
+    <header class="hero">
+        <!-- Skeleton background animation -->
+        <div class="hero-bg-animation">
+            <div class="skeleton-container">
+                <div class="skeleton-track">
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#E91E63;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="sparkles" style="color:#C28B5A;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#E91E63;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="sparkles" style="color:#C28B5A;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                </div>
+            </div>
+            <div class="skeleton-container s-delay">
+                <div class="skeleton-track track-fast">
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="mic" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#E91E63;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="lightbulb" style="color:#C28B5A;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="mic" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#E91E63;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="lightbulb" style="color:#C28B5A;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container hero-grid relative-z">
+            <div class="hero-content">
+                <div class="hero-badge reveal-up">
+                    <span class="badge-dot"></span> يعمل على جهازك بالكامل · بخصوصية مطلقة
+                </div>
+                <h1 class="hero-title reveal-up">
+                    دفترك الخاص،<br>ورفيقٌ ذكيّ <span class="highlight kashida-hover" data-prefix="يفهم" data-suffix="ك" data-count="10">يفهمك</span>
+                </h1>
+                <p class="hero-description reveal-up">
+                    <span class="kashida-hover" data-prefix="بصي" data-suffix="رة" data-count="15">بصيرة</span> مساحةٌ هادئة تكتب فيها بحرية وتفهم نفسك بعمق. اكتب أو سجّل بصوتك،
+                    ودع «سهيل» — رفيقك الذكي — يقرأ ما تكتبه ليهديك نصائح ورؤى وكبسولات ملهمة… وكل ذلك مشفّر ولا يغادر جهازك.
+                </p>
+                <div class="hero-actions reveal-up">
+                    <a href="#download" class="btn primary-btn">
+                        <i data-lucide="download" class="icon"></i> حمّل الآن
+                    </a>
+                    <a href="#features" class="btn secondary-btn">اكتشف المميزات</a>
+                </div>
+                <div class="hero-trust reveal-up">
+                    <span><i data-lucide="lock"></i> تشفير AES-256</span>
+                    <span><i data-lucide="cloud-off"></i> بلا خادم</span>
+                    <span><i data-lucide="eye-off"></i> بلا تتبّع</span>
+                </div>
+            </div>
+
+            <!-- Phone mockup -->
+            <div class="hero-visual reveal-up">
+                <div class="phone-glow"></div>
+                <div class="phone-mockup floating-group">
+                    <div class="phone-screen">
+                        <div class="app-statusbar">
+                            <span>٩:٤١</span>
+                            <span class="sb-dots"><i data-lucide="signal"></i><i data-lucide="wifi"></i><i data-lucide="battery-full"></i></span>
+                        </div>
+                        <div class="app-header">
+                            <div>
+                                <p class="app-greet">مساءَ الخير، أحمد</p>
+                                <p class="app-sub">الخميس، ٢٥ يونيو</p>
+                            </div>
+                            <div class="app-mood"><i data-lucide="smile"></i></div>
+                        </div>
+
+                        <div class="app-pulse-banner">
+                            <span class="apb-icon"><i data-lucide="sparkles"></i></span>
+                            <div class="apb-text">
+                                <strong>نبضة جديدة بانتظارك</strong>
+                                <span>سهيل لاحظ شيئاً في كتاباتك</span>
+                            </div>
+                            <i data-lucide="chevron-left" class="apb-arrow"></i>
+                        </div>
+
+                        <p class="app-label">أحدث التدوينات</p>
+                        <div class="app-entry">
+                            <div class="entry-cover cover-a"><i data-lucide="moon"></i></div>
+                            <div class="entry-body">
+                                <strong>مساءٌ هادئ بعد يوم طويل</strong>
+                                <span>جلستُ مع فنجان قهوتي أتأمل…</span>
+                                <div class="entry-tags"><i>#امتنان</i><i>#تأمل</i></div>
+                            </div>
+                        </div>
+                        <div class="app-entry">
+                            <div class="entry-cover cover-b"><i data-lucide="sun"></i></div>
+                            <div class="entry-body">
+                                <strong>بدايةُ أسبوعٍ مليء بالطاقة</strong>
+                                <span>اليوم أنجزتُ ما أجّلته طويلاً…</span>
+                                <div class="entry-tags"><i>#عمل</i><i>#إنجاز</i></div>
+                            </div>
+                        </div>
+
+                        <div class="app-fab"><i data-lucide="plus"></i></div>
+                        <div class="app-nav">
+                            <span class="nav-active"><i data-lucide="folder"></i></span>
+                            <span><i data-lucide="sparkles"></i></span>
+                            <span><i data-lucide="bar-chart-2"></i></span>
+                            <span><i data-lucide="user"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====================== TRUST STRIP ====================== -->
+    <section class="trust-strip">
+        <div class="container trust-grid">
+            <div class="trust-item reveal-up">
+                <i data-lucide="shield-check"></i>
+                <div><strong>محلّي بالكامل</strong><span>تُحفظ يومياتك على جهازك، ولا تُرفع إلى أي خادم.</span></div>
+            </div>
+            <div class="trust-item reveal-up" style="transition-delay:80ms;">
+                <i data-lucide="lock"></i>
+                <div><strong>مشفّرة AES-256</strong><span>محتوى يومياتك مشفّر داخل قاعدة البيانات نفسها.</span></div>
+            </div>
+            <div class="trust-item reveal-up" style="transition-delay:160ms;">
+                <i data-lucide="eye-off"></i>
+                <div><strong>بلا تتبّع ولا إعلانات</strong><span>لا أدوات تحليل، ولا بيع للبيانات. أنت فقط.</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== SOHAIL (AI companion) — dark section ====================== -->
+    <section id="sohail" class="sohail">
+        <div class="container sohail-grid">
+            <div class="sohail-content reveal-up">
+                <span class="eyebrow eyebrow-light">رفيقك الذكي</span>
+                <h2 class="section-title light">تعرّف على <span class="accent-terracotta">سهيل</span></h2>
+                <p class="section-lead light">
+                    سهيل ليس مجرد مساعد — إنه رفيقٌ يقرأ ما تكتبه بهدوء، فيهديك نصيحةً في وقتها، قصةً تلهمك،
+                    أو خطوةً عمليةً مستوحاة من يومياتك أنت. يستخدم اسمك وهدفك ليجعل كل كلمة أقرب إليك.
+                </p>
+                <ul class="sohail-list">
+                    <li><i data-lucide="check"></i> يفهم سياقك من كتاباتك، لا من قوالب جاهزة</li>
+                    <li><i data-lucide="check"></i> يحترم خصوصيتك — لا يقترب من مجلداتك السرّية أبداً</li>
+                    <li><i data-lucide="check"></i> يعمل فقط بعد موافقتك الصريحة على المعالجة</li>
+                </ul>
+                <a href="#download" class="btn primary-btn">جرّب سهيل <i data-lucide="arrow-left" class="icon"></i></a>
+            </div>
+
+            <div class="sohail-visual reveal-up">
+                <div class="pulse-capsule">
+                    <div class="capsule-glow"></div>
+                    <span class="capsule-type"><i data-lucide="lightbulb"></i> إلهام</span>
+                    <p class="capsule-text">
+                        «لاحظتُ أنك تكتب عن الامتنان كثيراً هذا الأسبوع — جرّب أن تخصّص خمس دقائق صباحاً
+                        لتدوين ثلاثة أشياء تمتنّ لها. غالباً ما يبدأ اليوم الجميل من هنا.»
+                    </p>
+                    <div class="capsule-foot">
+                        <span class="capsule-author">— سهيل</span>
+                        <div class="capsule-react">
+                            <i data-lucide="thumbs-up"></i>
+                            <i data-lucide="thumbs-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== FEATURES GRID ====================== -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-head text-center">
+                <span class="eyebrow">كل ما تحتاجه للكتابة والتأمّل</span>
+                <h2 class="section-title">مساحةٌ واحدة… <span class="highlight">عميقةٌ بما يكفي</span></h2>
+                <p class="section-lead center">أدوات صُمّمت بعناية لتكتب بحرية، وتنظّم ذكرياتك، وتفهم نفسك يوماً بعد يوم.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card reveal-up">
+                    <div class="feature-icon-wrapper"><i data-lucide="feather" class="feature-icon"></i></div>
+                    <h3 class="feature-title">يوميات غنية ومشفّرة</h3>
+                    <p class="feature-desc">محرّر بتنسيق كامل، أغلفة مرسومة تلقائياً حسب مزاجك، تسجيل المزاج اليومي، ووسوم تنظّم ذكرياتك — مع تقويم يرسم رحلتك يوماً بيوم.</p>
+                </div>
+
+                <div class="feature-card reveal-up" style="transition-delay:80ms;">
+                    <div class="feature-icon-wrapper"><i data-lucide="folder-lock" class="feature-icon"></i></div>
+                    <h3 class="feature-title">مجلدات ومجلدات سرّية</h3>
+                    <p class="feature-desc">رتّب تدويناتك في مجلدات حسب موضوعها، واحمِ الخاص منها بمجلد سرّي مقفل ببصمتك — ومستثنى تماماً من الذكاء الاصطناعي.</p>
+                </div>
+
+                <div class="feature-card reveal-up" style="transition-delay:160ms;">
+                    <div class="feature-icon-wrapper"><i data-lucide="mic" class="feature-icon"></i></div>
+                    <h3 class="feature-title">تدوين صوتي وإملاء</h3>
+                    <p class="feature-desc">سجّل ملاحظة صوتية تحفظها مع تدوينتك، أو أملِ أفكارك بصوتك ليتحوّل كلامك إلى نص عربي مباشرةً على جهازك — دون إنترنت.</p>
+                </div>
+
+                <div class="feature-card reveal-up">
+                    <div class="feature-icon-wrapper"><i data-lucide="sparkles" class="feature-icon"></i></div>
+                    <h3 class="feature-title">نبضات تُلهمك</h3>
+                    <p class="feature-desc">كبسولات قصيرة مخصّصة تُولَّد من كتاباتك تلقائياً: نصيحة، قصة، خطة عمل، أو حلٌّ لمشكلة تشغلك — في الوقت المناسب.</p>
+                </div>
+
+                <div class="feature-card reveal-up" style="transition-delay:80ms;">
+                    <div class="feature-icon-wrapper"><i data-lucide="bar-chart-2" class="feature-icon"></i></div>
+                    <h3 class="feature-title">تحليلات للمزاج والأنماط</h3>
+                    <p class="feature-desc">شاهد تطوّر مزاجك عبر الوقت، ومواضيعك الأبرز، وخلاصة تأمّلية لطيفة لأنماطك — بأمان، ودون المساس بمجلداتك السرّية.</p>
+                </div>
+
+                <div class="feature-card reveal-up" style="transition-delay:160ms;">
+                    <div class="feature-icon-wrapper"><i data-lucide="wand-2" class="feature-icon"></i></div>
+                    <h3 class="feature-title">كتابة موجّهة</h3>
+                    <p class="feature-desc">حين لا تعرف من أين تبدأ، تطرح عليك بصيرة أسئلة لطيفة وتمارين تأمّل، ثم تحوّل إجاباتك إلى بدايةِ تدوينة جاهزة.</p>
+                </div>
+            </div>
+
+            <!-- secondary "and more" strip -->
+            <div class="more-strip reveal-up">
+                <div class="more-item"><i data-lucide="moon"></i> وضع ليلي مريح للعين</div>
+                <div class="more-item"><i data-lucide="bell"></i> تذكير يومي في وقتك</div>
+                <div class="more-item"><i data-lucide="fingerprint"></i> قفل برمز أو بصمة</div>
+                <div class="more-item"><i data-lucide="image"></i> أغلفة تُرسم حسب المزاج</div>
+                <div class="more-item"><i data-lucide="calendar"></i> تقويم لرحلتك</div>
+                <div class="more-item"><i data-lucide="tag"></i> وسوم وبحث فوري</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== النبضات (PULSE) showcase ====================== -->
+    <section class="showcase showcase-alt">
+        <div class="container showcase-grid">
+            <div class="showcase-visual reveal-up">
+                <div class="chips-wrap">
+                    <span class="chip"><i data-lucide="lightbulb"></i> نصيحة</span>
+                    <span class="chip"><i data-lucide="book-open"></i> قصة</span>
+                    <span class="chip"><i data-lucide="quote"></i> مقولة</span>
+                    <span class="chip"><i data-lucide="wrench"></i> طريقة</span>
+                    <span class="chip"><i data-lucide="route"></i> خارطة طريق</span>
+                    <span class="chip"><i data-lucide="sparkles"></i> إلهام</span>
+                    <span class="chip"><i data-lucide="puzzle"></i> حل مشكلة</span>
+                    <span class="chip"><i data-lucide="trending-up"></i> توسّع</span>
+                </div>
+            </div>
+            <div class="showcase-content reveal-up">
+                <span class="eyebrow">النبضات</span>
+                <h2 class="section-title">إلهامٌ يأتيك… من كتاباتك أنت</h2>
+                <p class="section-lead">
+                    اكتب يومياتك، وستتولّد لك نبضات ملهمة مخصّصة تلقائياً. تتنوّع بين النصيحة العملية والقصة الملهمة
+                    وخارطة الطريق وحلّ المشكلة — وأنت تتحكّم في أنواعها، وعمقها، وتكرارها من الإعدادات.
+                </p>
+                <ul class="check-list">
+                    <li><i data-lucide="check"></i> توليد تلقائي بعد عددٍ من التدوينات الجديدة</li>
+                    <li><i data-lucide="check"></i> تحكّم كامل في الأنواع المفعّلة وعمق المحتوى</li>
+                    <li><i data-lucide="check"></i> قيّم كل نبضة بالإعجاب لتتحسّن مع الوقت</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== التحليلات (INSIGHTS) showcase ====================== -->
+    <section id="insights" class="showcase">
+        <div class="container showcase-grid">
+            <div class="showcase-content reveal-up">
+                <span class="eyebrow">التحليلات</span>
+                <h2 class="section-title">افهم نفسك… <span class="highlight">بالأرقام والكلمات</span></h2>
+                <p class="section-lead">
+                    تحليلٌ معمّق لأنماطك المزاجية ومواضيعك المتكررة، يتأمّل أفكارك بخصوصية تامة ويقدّم لك
+                    خلاصةً واضحة واقتراحاتٍ لطيفة — ودائماً دون المساس بمجلداتك السرّية.
+                </p>
+                <ul class="check-list">
+                    <li><i data-lucide="check"></i> منحنى تطوّر المزاج عبر التدوينات</li>
+                    <li><i data-lucide="check"></i> المواضيع الأبرز التي تشغل بالك</li>
+                    <li><i data-lucide="check"></i> خلاصة تأمّلية واقتراحات قابلة للتطبيق</li>
+                </ul>
+            </div>
+
+            <div class="showcase-visual reveal-up">
+                <div class="insight-card">
+                    <div class="insight-head">
+                        <span><i data-lucide="activity"></i> تطوّر المزاج</span>
+                        <span class="insight-badge">١٢ تدوينة</span>
+                    </div>
+                    <!-- Mood trend chart -->
+                    <svg class="mood-chart" viewBox="0 0 320 140" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="moodFill" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#2C4C3B" stop-opacity="0.22"/>
+                                <stop offset="100%" stop-color="#2C4C3B" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                        <line x1="0" y1="35" x2="320" y2="35" class="grid-line"/>
+                        <line x1="0" y1="70" x2="320" y2="70" class="grid-line"/>
+                        <line x1="0" y1="105" x2="320" y2="105" class="grid-line"/>
+                        <path class="mood-area" d="M0,95 L53,70 L106,80 L160,45 L213,55 L266,25 L320,35 L320,140 L0,140 Z" fill="url(#moodFill)"/>
+                        <path class="mood-line graph-line" d="M0,95 L53,70 L106,80 L160,45 L213,55 L266,25 L320,35"
+                              fill="none" stroke="#2C4C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle class="graph-point point-1" cx="53" cy="70" r="4.5" fill="#2C4C3B"/>
+                        <circle class="graph-point point-2" cx="160" cy="45" r="4.5" fill="#2C4C3B"/>
+                        <circle class="graph-point point-3" cx="266" cy="25" r="5" fill="#C28B5A"/>
+                    </svg>
+                    <p class="insight-summary-label">المواضيع الأبرز</p>
+                    <div class="insight-topics">
+                        <span>العمل</span><span>الامتنان</span><span>العائلة</span><span>القراءة</span>
+                    </div>
+                    <div class="insight-summary">
+                        <i data-lucide="feather"></i>
+                        <p>«مزاجك يتحسّن تدريجياً، وتكتب عن الامتنان أكثر — استمرّ، فأنت على الطريق.»</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== PRIVACY deep dive ====================== -->
+    <section id="privacy" class="privacy">
+        <div class="container">
+            <div class="section-head text-center">
+                <span class="eyebrow">خصوصيتك خطٌّ أحمر</span>
+                <h2 class="section-title">صُمّمت بصيرة لتبقى بياناتك <span class="highlight">لك وحدك</span></h2>
+                <p class="section-lead center">لا خوادم، لا حسابات إجبارية، لا تتبّع. أنت تملك دفترك بالكامل — حرفياً.</p>
+            </div>
+
+            <div class="privacy-grid">
+                <div class="privacy-card reveal-up">
+                    <i data-lucide="hard-drive"></i>
+                    <h3>محلّي بلا خادم</h3>
+                    <p>كل تدويناتك ووسومك ونبضاتك تُحفظ في قاعدة بيانات على جهازك. لا قاعدة بيانات سحابية في صميم التطبيق.</p>
+                </div>
+                <div class="privacy-card reveal-up" style="transition-delay:60ms;">
+                    <i data-lucide="lock"></i>
+                    <h3>تشفير في القاعدة</h3>
+                    <p>محتوى يومياتك مشفّر بمعيار AES-256-GCM داخل قاعدة البيانات، فلا يُقرأ حتى لو وصل أحدٌ إلى ملفاتك.</p>
+                </div>
+                <div class="privacy-card reveal-up" style="transition-delay:120ms;">
+                    <i data-lucide="fingerprint"></i>
+                    <h3>قفل برمز أو بصمة</h3>
+                    <p>أغلق التطبيق — أو مجلداً بعينه — برمزٍ سرّي أو ببصمتك، فيبقى دفترك بعيداً عن الفضوليين.</p>
+                </div>
+                <div class="privacy-card reveal-up">
+                    <i data-lucide="shield-check"></i>
+                    <h3>موافقة قبل أي معالجة</h3>
+                    <p>لا تُرسَل أي كلمة إلى الذكاء السحابي إلا بعد موافقتك الصريحة — وأنت من يقرّر، في أي وقت.</p>
+                </div>
+                <div class="privacy-card reveal-up" style="transition-delay:60ms;">
+                    <i data-lucide="folder-lock"></i>
+                    <h3>المجلدات السرّية مستثناة</h3>
+                    <p>ما تضعه في مجلد سرّي لا يصل إلى التحليلات أو النبضات أبداً. خصوصيةٌ كاملة لأكثر كتاباتك حساسية.</p>
+                </div>
+                <div class="privacy-card reveal-up" style="transition-delay:120ms;">
+                    <i data-lucide="heart-handshake"></i>
+                    <h3>جدارٌ أخلاقي يحميك</h3>
+                    <p>عند رصد محتوى حسّاس يدلّ على ضائقة، يتوقّف الإرسال ويُعرض لك دعمٌ ومصادر مساعدة بدل أي تحليل آليّ.</p>
+                </div>
+            </div>
+
+            <!-- BYOK callout -->
+            <div class="byok-callout reveal-up">
+                <div class="byok-icon"><i data-lucide="key-round"></i></div>
+                <div class="byok-text">
+                    <h3>الذكاء بشروطك أنت <span class="byok-tag">BYOK</span></h3>
+                    <p>
+                        النموذج الافتراضي مجاني وجاهز فوراً. وإن أردت، فعّل محرّكك المفضّل بمفتاحك الخاص
+                        (Gemini · OpenAI · Anthropic · Groq)، ويُحفظ المفتاح في الحافظة الآمنة لجهازك ولا يغادره.
+                    </p>
+                    <div class="byok-providers">
+                        <span>Gemini</span><span>OpenAI</span><span>Anthropic</span><span>Groq</span>
+                        <span class="byok-soon">معالجة محلية كاملة — قيد التطوير</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== HOW IT WORKS ====================== -->
+    <section class="how">
+        <div class="container">
+            <div class="section-head text-center">
+                <span class="eyebrow">ابدأ في دقائق</span>
+                <h2 class="section-title">رحلتك مع بصيرة في <span class="highlight">ثلاث خطوات</span></h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card reveal-up">
+                    <span class="step-num">١</span>
+                    <h3>اكتب أو سجّل</h3>
+                    <p>افتح دفترك ودوّن لحظتك — كتابةً، أو صوتاً، أو بمساعدة الكتابة الموجّهة حين تحتاجها.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card reveal-up" style="transition-delay:100ms;">
+                    <span class="step-num">٢</span>
+                    <h3>دع سهيل يتأمّل</h3>
+                    <p>يقرأ سهيل كتاباتك بخصوصية، فيهديك نبضاتٍ ملهمة وتحليلاتٍ تكشف أنماطك ومزاجك.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-card reveal-up" style="transition-delay:200ms;">
+                    <span class="step-num">٣</span>
+                    <h3>افهم وانمُ</h3>
+                    <p>راقب تطوّرك يوماً بيوم، وحوّل الرؤى إلى خطواتٍ صغيرة تقرّبك ممّن تريد أن تكون.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== DOWNLOAD CTA ====================== -->
+    <section id="download" class="cta-section">
+        <div class="container">
+            <div class="cta-card reveal-up">
+                <div class="cta-content">
+                    <span class="eyebrow eyebrow-light">ابدأ اليوم</span>
+                    <h2 class="cta-title">رحلتك نحو الوعي الذاتي تبدأ هنا</h2>
+                    <p class="cta-desc">حمّل بصيرة وابدأ في الكتابة والتأمّل بخصوصيةٍ تامة — مجاناً، وعلى جهازك أنت.</p>
+                    <div class="store-buttons">
+                        <a href="#" class="store-btn" id="btn-ios">
+                            <svg class="store-icon-svg" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.8 53.3c15.4-20 25.7-46.7 22.8-73.3-24.3 1.1-52.1 16.4-69.1 36.9-15.1 18.2-26.7 45.4-23.3 71.5 26.6 2 52.8-14.4 69.6-35.1z"></path>
+                            </svg>
+                            <div class="store-text">
+                                <span class="store-sub">حمّله من</span>
+                                <span class="store-main">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="store-btn" id="btn-android">
+                            <svg class="store-icon-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path>
+                            </svg>
+                            <div class="store-text">
+                                <span class="store-sub">احصل عليه من</span>
+                                <span class="store-main">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="coming-soon-badge">
+                        <span class="badge-dot"></span> سيتوفّر في المتجر قريباً
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo"><span class="logo-text">بصيرة</span></div>
+                <p class="footer-tagline">دفترك الخاص ورفيقك الذكي — مساحةٌ هادئة تكتب فيها بحرية، وتفهم نفسك بعمق.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>المنتج</h4>
+                    <a href="#features">المميزات</a>
+                    <a href="#sohail">سهيل</a>
+                    <a href="#insights">التحليلات</a>
+                    <a href="#privacy">الخصوصية</a>
+                </div>
+                <div class="link-group">
+                    <h4>التواصل</h4>
+                    <a href="mailto:info@owwwais.com">الدعم الفني</a>
+                    <a href="#download">تحميل التطبيق</a>
+                </div>
+                <div class="link-group">
+                    <h4>قانوني</h4>
+                    <a href="terms-of-service.html">شروط الاستخدام</a>
+                    <a href="privacy-policy.html">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2026</span> تطبيق بصيرة. جميع الحقوق محفوظة.</p>
+            <div class="developer-signature">
+                <img src="logo.svg" alt="Owais Logo" class="dev-logo">
+                <div class="dev-links">
+                    <a href="https://owwwais.com" target="_blank" class="dev-link">owwwais.com</a>
+                    <span class="dev-sep">•</span>
+                    <a href="mailto:info@owwwais.com" class="dev-contact">info@owwwais.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
