@@ -15,6 +15,10 @@
     <meta property="og:description" content="يوميات عربية محلّية بالكامل، مشفّرة، مع ذكاء اصطناعي يفهم كتاباتك ويهديك نصائح ورؤى — بخصوصية مطلقة.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ar_AR">
+    <meta property="og:url" content="https://basirah.owwwais.com/">
+    <meta property="og:image" content="https://basirah.owwwais.com/assets/app-icon.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://basirah.owwwais.com/">
 
     <!-- Font: Alyamama — the only family in the system (weights 300/400/600/800).
          Alyamama ships as STATIC weights on Google Fonts; a variable wght@100..900
@@ -23,17 +27,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        /* Content is visible by default; the reveal animation only engages once
+           this runs, so a script failure can never leave the page blank. */
+        document.documentElement.classList.add('js-reveal');
+    </script>
 </head>
 <body>
+    <!-- ICON SPRITE:START -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+      <symbol id="i-write" viewBox="0 0 24 24"><path d="M3 21 L3 16.5 L16.5 3 L21 7.5 L7.5 21 Z"/><path d="M13.5 6 L18 10.5"/></symbol>
+      <symbol id="i-mic" viewBox="0 0 24 24"><path d="M9 2 H15 V11 L12 14 L9 11 Z"/><path d="M5 10 V12 L12 19 L19 12 V10"/><path d="M8 22 H16"/></symbol>
+      <symbol id="i-waveform" viewBox="0 0 24 24"><path d="M4 9 V15"/><path d="M8 6 V18"/><path d="M12 3 V21"/><path d="M16 7 V17"/><path d="M20 10 V14"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><path d="M4 10 H20 V21 H4 Z"/><path d="M8 10 V7 L12 3 L16 7 V10"/></symbol>
+      <symbol id="i-biometric" viewBox="0 0 24 24"><path d="M3 14 L12 5 L21 14"/><path d="M6.5 17.5 L12 12 L17.5 17.5"/><path d="M10 21 L12 19 L14 21"/></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6 H10 L12 9 H21 V20 H3 Z"/></symbol>
+      <symbol id="i-folder-secret" viewBox="0 0 24 24"><path d="M3 6 H10 L12 9 H21 V20 H3 Z"/><path d="M12 13 L14 15 L12 17 L10 15 Z"/></symbol>
+      <symbol id="i-sohail" viewBox="0 0 24 24"><path d="M12 2 L14.4 9.6 L22 12 L14.4 14.4 L12 22 L9.6 14.4 L2 12 L9.6 9.6 Z"/></symbol>
+      <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M2 12 H7 L10 5 L14 19 L17 12 H22"/></symbol>
+      <symbol id="i-insights" viewBox="0 0 24 24"><path d="M3 3 V21 H21"/><path d="M6 17 L10 11 L13.5 14 L18 6"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M3 5 H21 V21 H3 Z"/><path d="M3 10 H21"/><path d="M8 2 V7"/><path d="M16 2 V7"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M2 12 L12 2 H22 V12 L12 22 Z"/><path d="M16 6 H18 V8 H16 Z"/></symbol>
+      <symbol id="i-encrypted" viewBox="0 0 24 24"><path d="M12 2 L21 5 V12 L12 22 L3 12 V5 Z"/><path d="M8 12 L11 15 L16 9"/></symbol>
+      <symbol id="i-shield-lock" viewBox="0 0 24 24"><path d="M12 2 L21 5 V12 L12 22 L3 12 V5 Z"/><path d="M12 9 L14 11 L12 13 L10 11 Z"/><path d="M12 13 V16"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><path d="M3 3 H15 V15 H3 Z"/><path d="M15 15 L21 21"/></symbol>
+      <symbol id="i-adjust" viewBox="0 0 24 24"><path d="M3 7 H21"/><path d="M3 12 H21"/><path d="M3 17 H21"/><path d="M7 5 H10 V9 H7 Z"/><path d="M14 10 H17 V14 H14 Z"/><path d="M8 15 H11 V19 H8 Z"/></symbol>
+      <symbol id="i-settings" viewBox="0 0 24 24"><path d="M9 3 H15 L21 9 V15 L15 21 H9 L3 15 V9 Z"/><path d="M9.5 9.5 H14.5 V14.5 H9.5 Z"/></symbol>
+      <symbol id="i-like" viewBox="0 0 24 24"><path d="M12 21 L3 12 V7 L7 3 L12 8 L17 3 L21 7 V12 Z"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><path d="M3 5 H21 V19 H3 Z"/><path d="M3 16 L9 10 L14 15 L17 12 L21 16"/><path d="M16 8 H18 V10 H16 Z"/></symbol>
+      <symbol id="i-ai" viewBox="0 0 24 24"><path d="M8 8 H16 V16 H8 Z"/><path d="M12 3 V8"/><path d="M12 16 V21"/><path d="M3 12 H8"/><path d="M16 12 H21"/></symbol>
+      <symbol id="i-notify" viewBox="0 0 24 24"><path d="M4 18 H20 L17 15 V10 L12 4 L7 10 V15 Z"/><path d="M10 18 L12 21 L14 18"/></symbol>
+      <symbol id="i-reminder" viewBox="0 0 24 24"><path d="M12 3 L19 7 V17 L12 21 L5 17 V7 Z"/><path d="M12 8 V12 L15 14"/></symbol>
+      <symbol id="i-share" viewBox="0 0 24 24"><path d="M4 10 H8 V14 H4 Z"/><path d="M16 3 H20 V7 H16 Z"/><path d="M16 17 H20 V21 H16 Z"/><path d="M8 12 L16 6"/><path d="M8 12 L16 18"/></symbol>
+      <symbol id="i-backup" viewBox="0 0 24 24"><path d="M4 15 V20 H20 V15"/><path d="M12 16 V4"/><path d="M7 9 L12 4 L17 9"/></symbol>
+      <symbol id="i-theme" viewBox="0 0 24 24"><path d="M4 4 H20 V20 H4 Z"/><path d="M12 4 L20 4 V20 L12 20 Z" style="fill:currentColor"/></symbol>
+      <symbol id="i-prompt" viewBox="0 0 24 24"><path d="M3 4 H21 V20 H3 Z"/><path d="M9 9 L12 7 L15 9 L12 12 V14"/><path d="M11 16 H13"/></symbol>
+      <symbol id="i-api-key" viewBox="0 0 24 24"><path d="M13 3 H21 V11 H13 Z"/><path d="M13 11 L4 20"/><path d="M7 17 L9 19"/></symbol>
+      <symbol id="i-mood-5" viewBox="0 0 24 24"><path d="M4 4 H20 V20 H4 Z"/><path d="M9 9 V11"/><path d="M15 9 V11"/><path d="M8 13 L12 18 L16 13 Z"/></symbol>
+      <symbol id="i-mood-4" viewBox="0 0 24 24"><path d="M4 4 H20 V20 H4 Z"/><path d="M9 9 V11"/><path d="M15 9 V11"/><path d="M8 15 L12 17.5 L16 15"/></symbol>
+      <symbol id="i-mood-3" viewBox="0 0 24 24"><path d="M4 4 H20 V20 H4 Z"/><path d="M9 9 V11"/><path d="M15 9 V11"/><path d="M8 16 H16"/></symbol>
+      <symbol id="i-mood-2" viewBox="0 0 24 24"><path d="M4 4 H20 V20 H4 Z"/><path d="M9 9 V11"/><path d="M15 9 V11"/><path d="M8 17 L12 15 L16 17"/></symbol>
+      <symbol id="i-mood-1" viewBox="0 0 24 24"><path d="M4 4 H20 V20 H4 Z"/><path d="M9 9 V11"/><path d="M15 9 V11"/><path d="M8 18 L12 14 L16 18"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12 L10 18 L20 8"/></symbol>
+      <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M20 12 H4"/><path d="M10 6 L4 12 L10 18"/></symbol>
+      <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="M14 5 L7 12 L14 19"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 4 V20"/><path d="M4 12 H20"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><path d="M9 4 H15 V10 H9 Z"/><path d="M4 20 V17 L8 13 H16 L20 17 V20"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3 V15"/><path d="M7 10 L12 15 L17 10"/><path d="M4 19 H20"/></symbol>
+      <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M2 12 L12 5 L22 12 L12 19 Z"/><path d="M10 10 H14 V14 H10 Z"/><path d="M4 4 L20 20"/></symbol>
+      <symbol id="i-cloud-off" viewBox="0 0 24 24"><path d="M4 17 V13 L8 9 H13 L17 13 H20 V17 Z"/><path d="M4 4 L20 20"/></symbol>
+      <symbol id="i-device" viewBox="0 0 24 24"><path d="M3 8 H21 V16 H3 Z"/><path d="M6 12 H10"/><path d="M17 12 H18"/></symbol>
+      <symbol id="i-quote" viewBox="0 0 24 24"><path d="M4 5 H10 V11 H4 Z"/><path d="M4 11 L7 16"/><path d="M14 5 H20 V11 H14 Z"/><path d="M14 11 L17 16"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 6 H10 L12 8 L14 6 H21 V19 H14 L12 17 L10 19 H3 Z"/><path d="M12 8 V17"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M21 6 L18 3 L15 6 L18 9 Z"/><path d="M18 9 L6 21 L3 18 L15 6"/></symbol>
+      <symbol id="i-route" viewBox="0 0 24 24"><path d="M4 4 H8 V8 H4 Z"/><path d="M16 16 H20 V20 H16 Z"/><path d="M6 8 V13 H18 V16"/></symbol>
+      <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M4 4 H10 V7 H14 V4 H20 V10 H17 V14 H20 V20 H14 V17 H10 V20 H4 Z"/></symbol>
+      <symbol id="i-trend-up" viewBox="0 0 24 24"><path d="M3 18 L9 12 L13 16 L21 8"/><path d="M15 8 H21 V14"/></symbol>
+      <symbol id="i-dislike" viewBox="0 0 24 24"><path d="M12 3 L21 12 V17 L17 21 L12 16 L7 21 L3 17 V12 Z"/></symbol>
+      <symbol id="i-signal" viewBox="0 0 24 24"><path d="M4 20 V17"/><path d="M9 20 V13"/><path d="M14 20 V9"/><path d="M19 20 V5"/></symbol>
+      <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 8 L12 2 L22 8"/><path d="M6 13 L12 9 L18 13"/><path d="M10 17 H14 V20 H10 Z"/></symbol>
+      <symbol id="i-battery" viewBox="0 0 24 24"><path d="M3 8 H18 V16 H3 Z"/><path d="M20 11 V13"/><path d="M5 10 H12 V14 H5 Z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6 H21"/><path d="M3 12 H21"/><path d="M3 18 H21"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 L19 19"/><path d="M19 5 L5 19"/></symbol>
+    </svg>
+    <!-- ICON SPRITE:END -->
+    <a href="#features" class="skip-link">تخطَّ إلى المحتوى</a>
+
     <!-- ====================== NAVBAR ====================== -->
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo" aria-label="بصيرة — الصفحة الرئيسية">
                 <img src="logo.svg" alt="بصيرة" class="logo-img">
             </a>
-            <div class="nav-links">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="فتح القائمة">
+                <svg class="ic nav-toggle-open" aria-hidden="true"><use href="#i-menu"></use></svg>
+                <svg class="ic nav-toggle-close" aria-hidden="true"><use href="#i-close"></use></svg>
+            </button>
+            <div class="nav-links" id="nav-menu">
                 <a href="#features" class="nav-link">المميزات</a>
                 <a href="#sohail" class="nav-link">سهيل</a>
                 <a href="#insights" class="nav-link">التحليلات</a>
@@ -49,30 +119,30 @@
         <div class="hero-bg-animation">
             <div class="skeleton-container">
                 <div class="skeleton-track">
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#8A3B32;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="sparkles" style="color:#C9A34E;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#8A3B32;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="sparkles" style="color:#C9A34E;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#7A9A85;" aria-hidden="true"><use href="#i-mood-4"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#2C4C3B;" aria-hidden="true"><use href="#i-write"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#7A9A85;" aria-hidden="true"><use href="#i-like"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#C9A34E;" aria-hidden="true"><use href="#i-sohail"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#7A9A85;" aria-hidden="true"><use href="#i-mood-4"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#7A9A85;" aria-hidden="true"><use href="#i-mood-4"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#2C4C3B;" aria-hidden="true"><use href="#i-write"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#7A9A85;" aria-hidden="true"><use href="#i-like"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#C9A34E;" aria-hidden="true"><use href="#i-sohail"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#7A9A85;" aria-hidden="true"><use href="#i-mood-4"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
                 </div>
             </div>
             <div class="skeleton-container s-delay">
                 <div class="skeleton-track track-fast">
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="mic" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#8A3B32;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="lightbulb" style="color:#C9A34E;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="mic" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#8A3B32;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="lightbulb" style="color:#C9A34E;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#2C4C3B;" aria-hidden="true"><use href="#i-mic"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#7A9A85;" aria-hidden="true"><use href="#i-like"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#C9A34E;" aria-hidden="true"><use href="#i-pulse"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#7A9A85;" aria-hidden="true"><use href="#i-mood-4"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#2C4C3B;" aria-hidden="true"><use href="#i-write"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#2C4C3B;" aria-hidden="true"><use href="#i-mic"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#7A9A85;" aria-hidden="true"><use href="#i-like"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#C9A34E;" aria-hidden="true"><use href="#i-pulse"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#7A9A85;" aria-hidden="true"><use href="#i-mood-4"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><svg class="ic" style="color:#2C4C3B;" aria-hidden="true"><use href="#i-write"></use></svg></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
                 </div>
             </div>
         </div>
@@ -91,14 +161,14 @@
                 </p>
                 <div class="hero-actions reveal-up">
                     <a href="#download" class="btn primary-btn">
-                        <i data-lucide="download" class="icon"></i> حمّل الآن
+                        <svg class="ic icon" aria-hidden="true"><use href="#i-download"></use></svg> حمّل الآن
                     </a>
                     <a href="#features" class="btn secondary-btn">اكتشف المميزات</a>
                 </div>
                 <div class="hero-trust reveal-up">
-                    <span><i data-lucide="lock"></i> تشفير AES-256</span>
-                    <span><i data-lucide="cloud-off"></i> بلا خادم</span>
-                    <span><i data-lucide="eye-off"></i> بلا تتبّع</span>
+                    <span><svg class="ic" aria-hidden="true"><use href="#i-lock"></use></svg> تشفير AES-256</span>
+                    <span><svg class="ic" aria-hidden="true"><use href="#i-cloud-off"></use></svg> بلا خادم</span>
+                    <span><svg class="ic" aria-hidden="true"><use href="#i-eye-off"></use></svg> بلا تتبّع</span>
                 </div>
             </div>
 
@@ -109,28 +179,28 @@
                     <div class="phone-screen">
                         <div class="app-statusbar">
                             <span>٩:٤١</span>
-                            <span class="sb-dots"><i data-lucide="signal"></i><i data-lucide="wifi"></i><i data-lucide="battery-full"></i></span>
+                            <span class="sb-dots"><svg class="ic" aria-hidden="true"><use href="#i-signal"></use></svg><svg class="ic" aria-hidden="true"><use href="#i-wifi"></use></svg><svg class="ic" aria-hidden="true"><use href="#i-battery"></use></svg></span>
                         </div>
                         <div class="app-header">
                             <div>
                                 <p class="app-greet">مساءَ الخير، أحمد</p>
                                 <p class="app-sub">الخميس، ٢٥ يونيو</p>
                             </div>
-                            <div class="app-mood"><i data-lucide="smile"></i></div>
+                            <div class="app-mood"><svg class="ic" aria-hidden="true"><use href="#i-mood-4"></use></svg></div>
                         </div>
 
                         <div class="app-pulse-banner">
-                            <span class="apb-icon"><i data-lucide="sparkles"></i></span>
+                            <span class="apb-icon"><svg class="ic" aria-hidden="true"><use href="#i-sohail"></use></svg></span>
                             <div class="apb-text">
                                 <strong>نبضة جديدة بانتظارك</strong>
                                 <span>سهيل لاحظ شيئاً في كتاباتك</span>
                             </div>
-                            <i data-lucide="chevron-left" class="apb-arrow"></i>
+                            <svg class="ic apb-arrow" aria-hidden="true"><use href="#i-chevron-left"></use></svg>
                         </div>
 
                         <p class="app-label">أحدث التدوينات</p>
                         <div class="app-entry">
-                            <div class="entry-cover cover-a"><i data-lucide="moon"></i></div>
+                            <div class="entry-cover cover-a"><svg class="ic" aria-hidden="true"><use href="#i-mood-4"></use></svg></div>
                             <div class="entry-body">
                                 <strong>مساءٌ هادئ بعد يوم طويل</strong>
                                 <span>جلستُ مع فنجان قهوتي أتأمل…</span>
@@ -138,7 +208,7 @@
                             </div>
                         </div>
                         <div class="app-entry">
-                            <div class="entry-cover cover-b"><i data-lucide="sun"></i></div>
+                            <div class="entry-cover cover-b"><svg class="ic" aria-hidden="true"><use href="#i-mood-5"></use></svg></div>
                             <div class="entry-body">
                                 <strong>بدايةُ أسبوعٍ مليء بالطاقة</strong>
                                 <span>اليوم أنجزتُ ما أجّلته طويلاً…</span>
@@ -146,12 +216,12 @@
                             </div>
                         </div>
 
-                        <div class="app-fab"><i data-lucide="plus"></i></div>
+                        <div class="app-fab"><svg class="ic" aria-hidden="true"><use href="#i-plus"></use></svg></div>
                         <div class="app-nav">
-                            <span class="nav-active"><i data-lucide="folder"></i></span>
-                            <span><i data-lucide="sparkles"></i></span>
-                            <span><i data-lucide="bar-chart-2"></i></span>
-                            <span><i data-lucide="user"></i></span>
+                            <span class="nav-active"><svg class="ic" aria-hidden="true"><use href="#i-folder"></use></svg></span>
+                            <span><svg class="ic" aria-hidden="true"><use href="#i-sohail"></use></svg></span>
+                            <span><svg class="ic" aria-hidden="true"><use href="#i-insights"></use></svg></span>
+                            <span><svg class="ic" aria-hidden="true"><use href="#i-user"></use></svg></span>
                         </div>
                     </div>
                 </div>
@@ -163,15 +233,15 @@
     <section class="trust-strip">
         <div class="container trust-grid">
             <div class="trust-item reveal-up">
-                <i data-lucide="shield-check"></i>
+                <svg class="ic" aria-hidden="true"><use href="#i-encrypted"></use></svg>
                 <div><strong>محلّي بالكامل</strong><span>تُحفظ يومياتك على جهازك، ولا تُرفع إلى أي خادم.</span></div>
             </div>
             <div class="trust-item reveal-up" style="transition-delay:80ms;">
-                <i data-lucide="lock"></i>
+                <svg class="ic" aria-hidden="true"><use href="#i-lock"></use></svg>
                 <div><strong>مشفّرة AES-256</strong><span>محتوى يومياتك مشفّر داخل قاعدة البيانات نفسها.</span></div>
             </div>
             <div class="trust-item reveal-up" style="transition-delay:160ms;">
-                <i data-lucide="eye-off"></i>
+                <svg class="ic" aria-hidden="true"><use href="#i-eye-off"></use></svg>
                 <div><strong>بلا تتبّع ولا إعلانات</strong><span>لا أدوات تحليل، ولا بيع للبيانات. أنت فقط.</span></div>
             </div>
         </div>
@@ -188,17 +258,17 @@
                     أو خطوةً عمليةً مستوحاة من يومياتك أنت. يستخدم اسمك وهدفك ليجعل كل كلمة أقرب إليك.
                 </p>
                 <ul class="sohail-list">
-                    <li><i data-lucide="check"></i> يفهم سياقك من كتاباتك، لا من قوالب جاهزة</li>
-                    <li><i data-lucide="check"></i> يحترم خصوصيتك — لا يقترب من مجلداتك السرّية أبداً</li>
-                    <li><i data-lucide="check"></i> يعمل فقط بعد موافقتك الصريحة على المعالجة</li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg> يفهم سياقك من كتاباتك، لا من قوالب جاهزة</li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg> يحترم خصوصيتك — لا يقترب من مجلداتك السرّية أبداً</li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg> يعمل فقط بعد موافقتك الصريحة على المعالجة</li>
                 </ul>
-                <a href="#download" class="btn primary-btn">جرّب سهيل <i data-lucide="arrow-left" class="icon"></i></a>
+                <a href="#download" class="btn primary-btn">جرّب سهيل <svg class="ic icon" aria-hidden="true"><use href="#i-arrow-left"></use></svg></a>
             </div>
 
             <div class="sohail-visual reveal-up">
                 <div class="pulse-capsule">
                     <div class="capsule-glow"></div>
-                    <span class="capsule-type"><i data-lucide="lightbulb"></i> إلهام</span>
+                    <span class="capsule-type"><svg class="ic" aria-hidden="true"><use href="#i-pulse"></use></svg> إلهام</span>
                     <p class="capsule-text">
                         «لاحظتُ أنك تكتب عن الامتنان كثيراً هذا الأسبوع — جرّب أن تخصّص خمس دقائق صباحاً
                         لتدوين ثلاثة أشياء تمتنّ لها. غالباً ما يبدأ اليوم الجميل من هنا.»
@@ -206,8 +276,8 @@
                     <div class="capsule-foot">
                         <span class="capsule-author">— سهيل</span>
                         <div class="capsule-react">
-                            <i data-lucide="thumbs-up"></i>
-                            <i data-lucide="thumbs-down"></i>
+                            <svg class="ic" aria-hidden="true"><use href="#i-like"></use></svg>
+                            <svg class="ic" aria-hidden="true"><use href="#i-dislike"></use></svg>
                         </div>
                     </div>
                 </div>
@@ -226,37 +296,37 @@
 
             <div class="features-grid">
                 <div class="feature-card reveal-up">
-                    <div class="feature-icon-wrapper"><i data-lucide="feather" class="feature-icon"></i></div>
+                    <div class="feature-icon-wrapper"><svg class="ic feature-icon" aria-hidden="true"><use href="#i-write"></use></svg></div>
                     <h3 class="feature-title">يوميات غنية ومشفّرة</h3>
                     <p class="feature-desc">محرّر بتنسيق كامل، أغلفة مرسومة تلقائياً حسب مزاجك، تسجيل المزاج اليومي، ووسوم تنظّم ذكرياتك — مع تقويم يرسم رحلتك يوماً بيوم.</p>
                 </div>
 
                 <div class="feature-card reveal-up" style="transition-delay:80ms;">
-                    <div class="feature-icon-wrapper"><i data-lucide="folder-lock" class="feature-icon"></i></div>
+                    <div class="feature-icon-wrapper"><svg class="ic feature-icon" aria-hidden="true"><use href="#i-folder-secret"></use></svg></div>
                     <h3 class="feature-title">مجلدات ومجلدات سرّية</h3>
                     <p class="feature-desc">رتّب تدويناتك في مجلدات حسب موضوعها، واحمِ الخاص منها بمجلد سرّي مقفل ببصمتك — ومستثنى تماماً من الذكاء الاصطناعي.</p>
                 </div>
 
                 <div class="feature-card reveal-up" style="transition-delay:160ms;">
-                    <div class="feature-icon-wrapper"><i data-lucide="mic" class="feature-icon"></i></div>
+                    <div class="feature-icon-wrapper"><svg class="ic feature-icon" aria-hidden="true"><use href="#i-mic"></use></svg></div>
                     <h3 class="feature-title">تدوين صوتي وإملاء</h3>
                     <p class="feature-desc">سجّل ملاحظة صوتية تحفظها مع تدوينتك، أو أملِ أفكارك بصوتك ليتحوّل كلامك إلى نص عربي مباشرةً على جهازك — دون إنترنت.</p>
                 </div>
 
                 <div class="feature-card reveal-up">
-                    <div class="feature-icon-wrapper"><i data-lucide="sparkles" class="feature-icon"></i></div>
+                    <div class="feature-icon-wrapper"><svg class="ic feature-icon" aria-hidden="true"><use href="#i-sohail"></use></svg></div>
                     <h3 class="feature-title">نبضات تُلهمك</h3>
                     <p class="feature-desc">كبسولات قصيرة مخصّصة تُولَّد من كتاباتك تلقائياً: نصيحة، قصة، خطة عمل، أو حلٌّ لمشكلة تشغلك — في الوقت المناسب.</p>
                 </div>
 
                 <div class="feature-card reveal-up" style="transition-delay:80ms;">
-                    <div class="feature-icon-wrapper"><i data-lucide="bar-chart-2" class="feature-icon"></i></div>
+                    <div class="feature-icon-wrapper"><svg class="ic feature-icon" aria-hidden="true"><use href="#i-insights"></use></svg></div>
                     <h3 class="feature-title">تحليلات للمزاج والأنماط</h3>
                     <p class="feature-desc">شاهد تطوّر مزاجك عبر الوقت، ومواضيعك الأبرز، وخلاصة تأمّلية لطيفة لأنماطك — بأمان، ودون المساس بمجلداتك السرّية.</p>
                 </div>
 
                 <div class="feature-card reveal-up" style="transition-delay:160ms;">
-                    <div class="feature-icon-wrapper"><i data-lucide="wand-2" class="feature-icon"></i></div>
+                    <div class="feature-icon-wrapper"><svg class="ic feature-icon" aria-hidden="true"><use href="#i-prompt"></use></svg></div>
                     <h3 class="feature-title">كتابة موجّهة</h3>
                     <p class="feature-desc">حين لا تعرف من أين تبدأ، تطرح عليك بصيرة أسئلة لطيفة وتمارين تأمّل، ثم تحوّل إجاباتك إلى بدايةِ تدوينة جاهزة.</p>
                 </div>
@@ -264,12 +334,12 @@
 
             <!-- secondary "and more" strip -->
             <div class="more-strip reveal-up">
-                <div class="more-item"><i data-lucide="moon"></i> وضع ليلي مريح للعين</div>
-                <div class="more-item"><i data-lucide="bell"></i> تذكير يومي في وقتك</div>
-                <div class="more-item"><i data-lucide="fingerprint"></i> قفل برمز أو بصمة</div>
-                <div class="more-item"><i data-lucide="image"></i> أغلفة تُرسم حسب المزاج</div>
-                <div class="more-item"><i data-lucide="calendar"></i> تقويم لرحلتك</div>
-                <div class="more-item"><i data-lucide="tag"></i> وسوم وبحث فوري</div>
+                <div class="more-item"><svg class="ic" aria-hidden="true"><use href="#i-theme"></use></svg> وضع ليلي مريح للعين</div>
+                <div class="more-item"><svg class="ic" aria-hidden="true"><use href="#i-notify"></use></svg> تذكير يومي في وقتك</div>
+                <div class="more-item"><svg class="ic" aria-hidden="true"><use href="#i-biometric"></use></svg> قفل برمز أو بصمة</div>
+                <div class="more-item"><svg class="ic" aria-hidden="true"><use href="#i-image"></use></svg> أغلفة تُرسم حسب المزاج</div>
+                <div class="more-item"><svg class="ic" aria-hidden="true"><use href="#i-calendar"></use></svg> تقويم لرحلتك</div>
+                <div class="more-item"><svg class="ic" aria-hidden="true"><use href="#i-tag"></use></svg> وسوم وبحث فوري</div>
             </div>
         </div>
     </section>
@@ -279,14 +349,14 @@
         <div class="container showcase-grid">
             <div class="showcase-visual reveal-up">
                 <div class="chips-wrap">
-                    <span class="chip"><i data-lucide="lightbulb"></i> نصيحة</span>
-                    <span class="chip"><i data-lucide="book-open"></i> قصة</span>
-                    <span class="chip"><i data-lucide="quote"></i> مقولة</span>
-                    <span class="chip"><i data-lucide="wrench"></i> طريقة</span>
-                    <span class="chip"><i data-lucide="route"></i> خارطة طريق</span>
-                    <span class="chip"><i data-lucide="sparkles"></i> إلهام</span>
-                    <span class="chip"><i data-lucide="puzzle"></i> حل مشكلة</span>
-                    <span class="chip"><i data-lucide="trending-up"></i> توسّع</span>
+                    <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-pulse"></use></svg> نصيحة</span>
+                    <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-book"></use></svg> قصة</span>
+                    <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-quote"></use></svg> مقولة</span>
+                    <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-wrench"></use></svg> طريقة</span>
+                    <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-route"></use></svg> خارطة طريق</span>
+                    <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-sohail"></use></svg> إلهام</span>
+                    <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-puzzle"></use></svg> حل مشكلة</span>
+                    <span class="chip"><svg class="ic" aria-hidden="true"><use href="#i-trend-up"></use></svg> توسّع</span>
                 </div>
             </div>
             <div class="showcase-content reveal-up">
@@ -297,9 +367,9 @@
                     وخارطة الطريق وحلّ المشكلة — وأنت تتحكّم في أنواعها، وعمقها، وتكرارها من الإعدادات.
                 </p>
                 <ul class="check-list">
-                    <li><i data-lucide="check"></i> توليد تلقائي بعد عددٍ من التدوينات الجديدة</li>
-                    <li><i data-lucide="check"></i> تحكّم كامل في الأنواع المفعّلة وعمق المحتوى</li>
-                    <li><i data-lucide="check"></i> قيّم كل نبضة بالإعجاب لتتحسّن مع الوقت</li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg> توليد تلقائي بعد عددٍ من التدوينات الجديدة</li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg> تحكّم كامل في الأنواع المفعّلة وعمق المحتوى</li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg> قيّم كل نبضة بالإعجاب لتتحسّن مع الوقت</li>
                 </ul>
             </div>
         </div>
@@ -316,16 +386,16 @@
                     خلاصةً واضحة واقتراحاتٍ لطيفة — ودائماً دون المساس بمجلداتك السرّية.
                 </p>
                 <ul class="check-list">
-                    <li><i data-lucide="check"></i> منحنى تطوّر المزاج عبر التدوينات</li>
-                    <li><i data-lucide="check"></i> المواضيع الأبرز التي تشغل بالك</li>
-                    <li><i data-lucide="check"></i> خلاصة تأمّلية واقتراحات قابلة للتطبيق</li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg> منحنى تطوّر المزاج عبر التدوينات</li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg> المواضيع الأبرز التي تشغل بالك</li>
+                    <li><svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg> خلاصة تأمّلية واقتراحات قابلة للتطبيق</li>
                 </ul>
             </div>
 
             <div class="showcase-visual reveal-up">
                 <div class="insight-card">
                     <div class="insight-head">
-                        <span><i data-lucide="activity"></i> تطوّر المزاج</span>
+                        <span><svg class="ic" aria-hidden="true"><use href="#i-insights"></use></svg> تطوّر المزاج</span>
                         <span class="insight-badge">١٢ تدوينة</span>
                     </div>
                     <!-- Mood trend chart -->
@@ -351,7 +421,7 @@
                         <span>العمل</span><span>الامتنان</span><span>العائلة</span><span>القراءة</span>
                     </div>
                     <div class="insight-summary">
-                        <i data-lucide="feather"></i>
+                        <svg class="ic" aria-hidden="true"><use href="#i-write"></use></svg>
                         <p>«مزاجك يتحسّن تدريجياً، وتكتب عن الامتنان أكثر — استمرّ، فأنت على الطريق.»</p>
                     </div>
                 </div>
@@ -370,32 +440,32 @@
 
             <div class="privacy-grid">
                 <div class="privacy-card reveal-up">
-                    <i data-lucide="hard-drive"></i>
+                    <svg class="ic" aria-hidden="true"><use href="#i-device"></use></svg>
                     <h3>محلّي بلا خادم</h3>
                     <p>كل تدويناتك ووسومك ونبضاتك تُحفظ في قاعدة بيانات على جهازك. لا قاعدة بيانات سحابية في صميم التطبيق.</p>
                 </div>
                 <div class="privacy-card reveal-up" style="transition-delay:60ms;">
-                    <i data-lucide="lock"></i>
+                    <svg class="ic" aria-hidden="true"><use href="#i-lock"></use></svg>
                     <h3>تشفير في القاعدة</h3>
                     <p>محتوى يومياتك مشفّر بمعيار AES-256-GCM داخل قاعدة البيانات، فلا يُقرأ حتى لو وصل أحدٌ إلى ملفاتك.</p>
                 </div>
                 <div class="privacy-card reveal-up" style="transition-delay:120ms;">
-                    <i data-lucide="fingerprint"></i>
+                    <svg class="ic" aria-hidden="true"><use href="#i-biometric"></use></svg>
                     <h3>قفل برمز أو بصمة</h3>
                     <p>أغلق التطبيق — أو مجلداً بعينه — برمزٍ سرّي أو ببصمتك، فيبقى دفترك بعيداً عن الفضوليين.</p>
                 </div>
                 <div class="privacy-card reveal-up">
-                    <i data-lucide="shield-check"></i>
+                    <svg class="ic" aria-hidden="true"><use href="#i-encrypted"></use></svg>
                     <h3>موافقة قبل أي معالجة</h3>
                     <p>لا تُرسَل أي كلمة إلى الذكاء السحابي إلا بعد موافقتك الصريحة — وأنت من يقرّر، في أي وقت.</p>
                 </div>
                 <div class="privacy-card reveal-up" style="transition-delay:60ms;">
-                    <i data-lucide="folder-lock"></i>
+                    <svg class="ic" aria-hidden="true"><use href="#i-folder-secret"></use></svg>
                     <h3>المجلدات السرّية مستثناة</h3>
                     <p>ما تضعه في مجلد سرّي لا يصل إلى التحليلات أو النبضات أبداً. خصوصيةٌ كاملة لأكثر كتاباتك حساسية.</p>
                 </div>
                 <div class="privacy-card reveal-up" style="transition-delay:120ms;">
-                    <i data-lucide="heart-handshake"></i>
+                    <svg class="ic" aria-hidden="true"><use href="#i-like"></use></svg>
                     <h3>جدارٌ أخلاقي يحميك</h3>
                     <p>عند رصد محتوى حسّاس يدلّ على ضائقة، يتوقّف الإرسال ويُعرض لك دعمٌ ومصادر مساعدة بدل أي تحليل آليّ.</p>
                 </div>
@@ -403,7 +473,7 @@
 
             <!-- BYOK callout -->
             <div class="byok-callout reveal-up">
-                <div class="byok-icon"><i data-lucide="key-round"></i></div>
+                <div class="byok-icon"><svg class="ic" aria-hidden="true"><use href="#i-api-key"></use></svg></div>
                 <div class="byok-text">
                     <h3>الذكاء بشروطك أنت <span class="byok-tag">BYOK</span></h3>
                     <p>
