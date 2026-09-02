@@ -1,7 +1,11 @@
 // script.js — Basira landing page
 document.addEventListener('DOMContentLoaded', () => {
-    // Icons
-    lucide.createIcons();
+    // Icons — a CDN failure must not take the rest of the page down with it
+    try {
+        if (window.lucide) lucide.createIcons();
+    } catch (e) {
+        console.warn('lucide icons unavailable', e);
+    }
 
     // Auto year in footer
     const yearEl = document.getElementById('year');
