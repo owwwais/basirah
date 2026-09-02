@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بصيرة — دفترك الخاص، ورفيقٌ ذكيّ يفهمك</title>
     <meta name="description" content="بصيرة تطبيق يوميات عربي يعمل على جهازك بالكامل: محرر غني، تدوين صوتي، مجلدات سرّية، تحليلات للمزاج، وكبسولات «نبض» ملهمة من رفيقك الذكي «سهيل» — بتشفير كامل وخصوصية مطلقة.">
-    <meta name="theme-color" content="#2C4C3B">
+    <meta name="theme-color" content="#1B3227">
+    <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/app-icon.svg">
+    <link rel="mask-icon" href="assets/logo-mark.svg" color="#2C4C3B">
 
     <!-- Open Graph -->
     <meta property="og:title" content="بصيرة — دفترك الخاص، ورفيقٌ ذكيّ يفهمك">
@@ -13,10 +16,12 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ar_AR">
 
-    <!-- Fonts: Alyamama (local) / Inter / Playfair Display -->
+    <!-- Font: Alyamama — the only family in the system (weights 300/400/600/800).
+         Alyamama ships as STATIC weights on Google Fonts; a variable wght@100..900
+         query returns nothing and silently falls back to serif. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -25,8 +30,8 @@
     <!-- ====================== NAVBAR ====================== -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">
-                <span class="logo-text kashida-hover" data-prefix="بصي" data-suffix="رة" data-count="15">بصيرة</span>
+            <a href="#" class="logo" aria-label="بصيرة — الصفحة الرئيسية">
+                <img src="logo.svg" alt="بصيرة" class="logo-img">
             </a>
             <div class="nav-links">
                 <a href="#features" class="nav-link">المميزات</a>
@@ -44,29 +49,29 @@
         <div class="hero-bg-animation">
             <div class="skeleton-container">
                 <div class="skeleton-track">
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
                     <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#E91E63;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="sparkles" style="color:#C28B5A;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#8A3B32;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="sparkles" style="color:#C9A34E;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
                     <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#E91E63;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="sparkles" style="color:#C28B5A;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#8A3B32;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="sparkles" style="color:#C9A34E;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
                 </div>
             </div>
             <div class="skeleton-container s-delay">
                 <div class="skeleton-track track-fast">
                     <div class="skeleton-block"><div class="skel-img"><i data-lucide="mic" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#E91E63;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="lightbulb" style="color:#C28B5A;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#8A3B32;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="lightbulb" style="color:#C9A34E;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
                     <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
                     <div class="skeleton-block"><div class="skel-img"><i data-lucide="mic" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#E91E63;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="lightbulb" style="color:#C28B5A;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
-                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#4CAF50;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="heart" style="color:#8A3B32;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="lightbulb" style="color:#C9A34E;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
+                    <div class="skeleton-block"><div class="skel-img"><i data-lucide="smile" style="color:#7A9A85;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l2"></div></div></div>
                     <div class="skeleton-block"><div class="skel-img"><i data-lucide="feather" style="color:#2C4C3B;"></i></div><div class="skel-lines"><div class="skel-line l1"></div><div class="skel-line l3"></div></div></div>
                 </div>
             </div>
@@ -339,7 +344,7 @@
                               fill="none" stroke="#2C4C3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         <circle class="graph-point point-1" cx="53" cy="70" r="4.5" fill="#2C4C3B"/>
                         <circle class="graph-point point-2" cx="160" cy="45" r="4.5" fill="#2C4C3B"/>
-                        <circle class="graph-point point-3" cx="266" cy="25" r="5" fill="#C28B5A"/>
+                        <circle class="graph-point point-3" cx="266" cy="25" r="5" fill="#C9A34E"/>
                     </svg>
                     <p class="insight-summary-label">المواضيع الأبرز</p>
                     <div class="insight-topics">
@@ -483,7 +488,7 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
-                <div class="logo"><span class="logo-text">بصيرة</span></div>
+                <div class="logo"><img src="assets/logo-light.svg" alt="بصيرة" class="footer-logo-img"></div>
                 <p class="footer-tagline">دفترك الخاص ورفيقك الذكي — مساحةٌ هادئة تكتب فيها بحرية، وتفهم نفسك بعمق.</p>
             </div>
             <div class="footer-links">
@@ -509,7 +514,7 @@
         <div class="footer-bottom">
             <p>&copy; <span id="year">2026</span> تطبيق بصيرة. جميع الحقوق محفوظة.</p>
             <div class="developer-signature">
-                <img src="logo.svg" alt="Owais Logo" class="dev-logo">
+                <img src="assets/owais-logo.svg" alt="Owais" class="dev-logo">
                 <div class="dev-links">
                     <a href="https://owwwais.com" target="_blank" class="dev-link">owwwais.com</a>
                     <span class="dev-sep">•</span>
