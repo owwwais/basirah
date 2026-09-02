@@ -257,7 +257,7 @@ ul { list-style: none; }
     cursor: pointer;
     white-space: nowrap;
 }
-.kashida-hover.is-stretching { color: var(--terracotta); }
+.kashida-hover.is-stretching { color: var(--bsr-green-deep); }
 
 /* ====================== HERO ====================== */
 .hero {
@@ -314,7 +314,7 @@ ul { list-style: none; }
     font-weight: 600;
 }
 .hero-trust span { display: inline-flex; align-items: center; gap: 0.45rem; }
-.hero-trust i { width: 17px; height: 17px; color: var(--forest); }
+.hero-trust .ic { width: 17px; height: 17px; color: var(--forest); }
 
 /* ---- Phone mockup ---- */
 .hero-visual {
@@ -360,7 +360,7 @@ ul { list-style: none; }
     padding: 4px 6px 10px;
 }
 .app-statusbar .sb-dots { display: flex; gap: 5px; }
-.app-statusbar i { width: 14px; height: 14px; }
+.app-statusbar .ic { width: 14px; height: 14px; }
 
 .app-header {
     display: flex;
@@ -377,7 +377,7 @@ ul { list-style: none; }
     display: flex; align-items: center; justify-content: center;
     color: var(--forest);
 }
-.app-mood i { width: 22px; height: 22px; }
+.app-mood .ic { width: 22px; height: 22px; }
 
 .app-pulse-banner {
     display: flex;
@@ -397,7 +397,7 @@ ul { list-style: none; }
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
 }
-.apb-icon i { width: 18px; height: 18px; }
+.apb-icon .ic { width: 18px; height: 18px; }
 .apb-text { flex: 1; display: flex; flex-direction: column; line-height: 1.3; }
 .apb-text strong { font-size: 0.82rem; color: var(--ink); }
 .apb-text span { font-size: 0.72rem; color: var(--neutral-gray); }
@@ -426,7 +426,7 @@ ul { list-style: none; }
     display: flex; align-items: center; justify-content: center;
     color: var(--bsr-on-dark);
 }
-.entry-cover i { width: 20px; height: 20px; }
+.entry-cover .ic { width: 20px; height: 20px; }
 .cover-a { background: var(--bsr-green); }
 .cover-b { background: var(--bsr-gold); color: var(--bsr-green-deep); }
 .entry-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
@@ -453,7 +453,7 @@ ul { list-style: none; }
     display: flex; align-items: center; justify-content: center;
     box-shadow: none;
 }
-.app-fab i { width: 26px; height: 26px; }
+.app-fab .ic { width: 26px; height: 26px; }
 .app-nav {
     margin-top: auto;
     display: flex;
@@ -465,7 +465,7 @@ ul { list-style: none; }
     margin: 0 -14px;
 }
 .app-nav span { color: var(--neutral-gray); display: flex; }
-.app-nav i { width: 22px; height: 22px; }
+.app-nav .ic { width: 22px; height: 22px; }
 .app-nav .nav-active { color: var(--forest); }
 
 /* ---- Skeleton bg ---- */
@@ -503,7 +503,7 @@ ul { list-style: none; }
     background-color: var(--soft-green-grey);
     display: flex; align-items: center; justify-content: center;
 }
-.skel-img i { width: 20px; height: 20px; }
+.skel-img .ic { width: 20px; height: 20px; }
 .skel-lines { flex: 1; display: flex; flex-direction: column; gap: 0.5rem; }
 .skel-line { height: 8px; border-radius: 0; background-color: var(--border-light); }
 .l1 { width: 80%; } .l2 { width: 50%; } .l3 { width: 65%; }
@@ -524,7 +524,7 @@ ul { list-style: none; }
     box-shadow: var(--shadow-md);
 }
 .trust-item { display: flex; align-items: center; gap: 0.9rem; }
-.trust-item > i {
+.trust-item > .ic {
     width: 28px; height: 28px;
     color: var(--forest);
     flex-shrink: 0;
@@ -555,7 +555,7 @@ ul { list-style: none; }
     color: var(--bsr-cream);
     font-size: 1.05rem;
 }
-.sohail-list i { width: 20px; height: 20px; color: var(--bsr-mist); flex-shrink: 0; margin-top: 4px; }
+.sohail-list .ic { width: 20px; height: 20px; color: var(--bsr-mist); flex-shrink: 0; margin-top: 4px; }
 
 /* Pulse capsule card */
 .sohail-visual { display: flex; justify-content: center; }
@@ -589,7 +589,7 @@ ul { list-style: none; }
     border-radius: 0;
     margin-bottom: 1.3rem;
 }
-.capsule-type i { width: 15px; height: 15px; }
+.capsule-type .ic { width: 15px; height: 15px; }
 .capsule-text {
     position: relative;
     font-family: var(--font-heading);
@@ -606,13 +606,13 @@ ul { list-style: none; }
 }
 .capsule-author { color: var(--bsr-mist); font-weight: 700; }
 .capsule-react { display: flex; gap: 0.8rem; }
-.capsule-react i {
+.capsule-react .ic {
     width: 20px; height: 20px;
     color: var(--bsr-mist);
     transition: var(--transition-fast);
     cursor: pointer;
 }
-.capsule-react i:hover { color: var(--bsr-mist); transform: scale(1.15); }
+.capsule-react .ic:hover { color: var(--bsr-mist); transform: scale(1.15); }
 
 /* ====================== FEATURES ====================== */
 .features { padding: 70px 0; }
@@ -671,7 +671,7 @@ ul { list-style: none; }
     font-size: 0.95rem;
     color: var(--ink-soft);
 }
-.more-item i { width: 18px; height: 18px; color: var(--terracotta); }
+.more-item .ic { width: 18px; height: 18px; color: var(--bsr-green); }
 
 /* ====================== SHOWCASE (pulse / insights) ====================== */
 .showcase { padding: 80px 0; }
@@ -690,7 +690,7 @@ ul { list-style: none; }
     font-size: 1.05rem;
     color: var(--ink-soft);
 }
-.check-list i { width: 20px; height: 20px; color: var(--forest); flex-shrink: 0; margin-top: 4px; }
+.check-list .ic { width: 20px; height: 20px; color: var(--forest); flex-shrink: 0; margin-top: 4px; }
 
 /* pulse chips */
 .chips-wrap {
@@ -714,9 +714,8 @@ ul { list-style: none; }
     box-shadow: var(--shadow-sm);
     transition: var(--transition-spring);
 }
-.chip i { width: 19px; height: 19px; color: var(--terracotta); }
-.chip:nth-child(odd) { transform: translateY(-6px); }
-.chip:hover { transform: translateY(-10px) scale(1.04); box-shadow: var(--shadow-md); border-color: var(--terracotta); }
+.chip .ic { width: 19px; height: 19px; color: var(--terracotta); }
+.chip:hover { background: var(--bsr-cream); border-color: var(--bsr-gold); }
 
 /* insight card */
 .showcase-visual { display: flex; justify-content: center; }
@@ -736,7 +735,7 @@ ul { list-style: none; }
     margin-bottom: 1.2rem;
 }
 .insight-head > span { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 700; color: var(--ink); }
-.insight-head i { width: 19px; height: 19px; color: var(--forest); }
+.insight-head .ic { width: 19px; height: 19px; color: var(--forest); }
 .insight-badge {
     font-size: 0.8rem !important;
     font-weight: 700 !important;
@@ -766,7 +765,7 @@ ul { list-style: none; }
     border-top: var(--bsr-accent-bar) solid var(--bsr-gold);
     padding: 1rem;
 }
-.insight-summary i { width: 20px; height: 20px; color: var(--terracotta); flex-shrink: 0; margin-top: 3px; }
+.insight-summary .ic { width: 20px; height: 20px; color: var(--terracotta); flex-shrink: 0; margin-top: 3px; }
 .insight-summary p { font-size: 0.95rem; color: var(--ink-soft); line-height: 1.7; }
 
 /* ====================== PRIVACY ====================== */
@@ -790,7 +789,7 @@ ul { list-style: none; }
     transition: var(--transition-spring);
 }
 .privacy-card:hover { border-color: var(--bsr-green); }
-.privacy-card > i {
+.privacy-card > .ic {
     width: 30px; height: 30px;
     color: var(--forest);
     margin-bottom: 1.1rem;
@@ -822,7 +821,7 @@ ul { list-style: none; }
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
 }
-.byok-icon i { width: 34px; height: 34px; }
+.byok-icon .ic { width: 34px; height: 34px; }
 .byok-text h3 { color: var(--bsr-on-dark); font-size: 1.5rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; }
 .byok-tag {
     font-family: var(--font-en);
@@ -997,12 +996,12 @@ ul { list-style: none; }
 .dev-sep { color: var(--bsr-mist); font-size: 0.8rem; }
 
 /* ====================== REVEAL / ANIMATIONS ====================== */
-.reveal-up {
+.js-reveal .reveal-up {
     opacity: 0;
-    transform: translateY(36px);
-    transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+    transform: translateY(24px);
+    transition: opacity 0.5s linear, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.reveal-up.active { opacity: 1; transform: translateY(0); }
+.js-reveal .reveal-up.active { opacity: 1; transform: translateY(0); }
 
 .floating-group { animation: float 6s ease-in-out infinite; }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
@@ -1023,7 +1022,7 @@ ul { list-style: none; }
 
 @media (prefers-reduced-motion: reduce) {
     .floating-group, .graph-line, .graph-point, .skeleton-track, .badge-dot { animation: none !important; }
-    .reveal-up { transition: none; opacity: 1; transform: none; }
+    .js-reveal .reveal-up { transition: none; opacity: 1; transform: none; }
     html { scroll-behavior: auto; }
 }
 
@@ -1134,13 +1133,6 @@ textarea:focus-visible {
     }
 }
 
-/* Icons follow the system's stroke spec: 1.75, butt caps, mitred joins */
-svg.lucide, [data-lucide] {
-    stroke-width: var(--bsr-icon-stroke);
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-}
-
 /* On dark surfaces the primary action inverts to mist, per the dark-mode spec */
 .sohail .primary-btn,
 .cta-card .primary-btn {
@@ -1149,3 +1141,106 @@ svg.lucide, [data-lucide] {
 }
 .sohail .primary-btn:hover,
 .cta-card .primary-btn:hover { background-color: var(--bsr-cream); }
+
+/* Icons — the Basirah library. Stroke spec lives on the sprite root; these
+   rules only set the size scale (16 / 20 / 24 / 32, uniform, never re-drawn). */
+.ic {
+    width: 24px; height: 24px;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
+    /* <use> inherits from the instance, not from the sprite root, so the
+       stroke spec has to be re-stated here. */
+    fill: none;
+    stroke: currentColor;
+    stroke-width: var(--bsr-icon-stroke);
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+}
+.ic-16 { width: 16px; height: 16px; }
+.ic-20 { width: 20px; height: 20px; }
+.ic-32 { width: 32px; height: 32px; }
+/* Active state: fill the shape instead of stroking it */
+.ic.is-active { fill: var(--bsr-green); stroke: var(--bsr-green); }
+
+
+/* ==========================================================================
+   Polish layer
+   ========================================================================== */
+
+.skip-link {
+    position: absolute;
+    right: var(--bsr-s4);
+    top: -100px;
+    z-index: 2000;
+    background: var(--bsr-green);
+    color: var(--bsr-on-dark);
+    padding: var(--bsr-s3) var(--bsr-s6);
+    font-weight: 600;
+    transition: top 120ms linear;
+}
+.skip-link:focus { top: var(--bsr-s4); }
+
+::selection { background: var(--bsr-mist); color: var(--bsr-green-deep); }
+
+/* Section rhythm on the 4-multiple scale */
+.showcase, .features, .privacy { padding: var(--bsr-s16) 0; }
+.section-head { margin-bottom: var(--bsr-s12); }
+
+/* Chips and strips sit on a shared baseline — no decorative stagger */
+.chips-wrap { align-items: stretch; }
+.chip, .more-item { min-height: var(--bsr-hit-min); }
+
+/* Stacked triangles — the dark-surface pattern, one per screen */
+.sohail::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(135deg, var(--bsr-green) 0 50%, transparent 50%);
+    background-size: 26px 26px;
+    opacity: 0.10;
+    pointer-events: none;
+}
+.sohail > * { position: relative; }
+
+/* Mobile navigation */
+.nav-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: var(--bsr-hit-min);
+    height: var(--bsr-hit-min);
+    background: transparent;
+    border: 1px solid var(--bsr-sand);
+    color: var(--bsr-green);
+    cursor: pointer;
+}
+.nav-toggle-close { display: none; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-open { display: none; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-close { display: inline-block; }
+
+@media (max-width: 768px) {
+    .nav-toggle { display: inline-flex; }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 74px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: var(--bsr-cream);
+        border-bottom: var(--bsr-border);
+        padding: var(--bsr-s2) var(--container-padding) var(--bsr-s6);
+    }
+    .nav-links.is-open { display: flex; }
+    /* the desktop rule hides the links outright; inside the panel they show */
+    .nav-links .nav-link {
+        display: block;
+        min-height: var(--bsr-hit-min);
+        line-height: var(--bsr-hit-min);
+        border-bottom: var(--bsr-border);
+    }
+    .nav-links .nav-btn { margin-top: var(--bsr-s4); }
+}

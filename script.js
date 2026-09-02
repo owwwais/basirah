@@ -1,10 +1,27 @@
 // script.js — Basira landing page
 document.addEventListener('DOMContentLoaded', () => {
-    // Icons — a CDN failure must not take the rest of the page down with it
-    try {
-        if (window.lucide) lucide.createIcons();
-    } catch (e) {
-        console.warn('lucide icons unavailable', e);
+    // Mobile navigation
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    if (navToggle && navMenu) {
+        const setOpen = (open) => {
+            navToggle.setAttribute('aria-expanded', String(open));
+            navToggle.setAttribute('aria-label', open ? 'إغلاق القائمة' : 'فتح القائمة');
+            navMenu.classList.toggle('is-open', open);
+        };
+        navToggle.addEventListener('click', () => {
+            setOpen(navToggle.getAttribute('aria-expanded') !== 'true');
+        });
+        // Following a link, or leaving the mobile breakpoint, closes the panel
+        navMenu.addEventListener('click', (e) => {
+            if (e.target.closest('a')) setOpen(false);
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') setOpen(false);
+        });
+        window.matchMedia('(min-width: 769px)').addEventListener('change', (e) => {
+            if (e.matches) setOpen(false);
+        });
     }
 
     // Auto year in footer
